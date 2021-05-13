@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      .table--middle-center {
+        vertical-align: middle;
+        text-align: center;
+      }
+      .table--100 {
+        width: 100%;
+      }
+      .table--border_blue {
+        border: 1px solid lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table--100 table--middle-center" border="1">
+      <tr>
+        <td></td>
+        <td class="table--border_blue" width="140px">
+          <form action="success.html" method="get">
+            <div>
+              <label>
+                Name:
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="John Brown"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                Email:
+                <input
+                  name="email_address"
+                  type="email"
+                  placeholder="email@address.com"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+              <label>
+                Rate Us:
+                <div>
+                  <select name="rating" required>
+                    <option value="">- choose -</option>
+                    <option value="Great">great</option>
+                    <option value="Nice">nice</option>
+                    <option value="So So">so so</option>
+                    <option value="Poor">poor</option>
+                    <option value="Terrible">terrible</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+            <div>
+              <label>
+                Comment:
+                <textarea
+                  name="user-comment"
+                  cols="20"
+                  rows="5"
+                  placeholder="Your Comment here:"
+                ></textarea>
+              </label>
+            </div>
+            <div>
+              <button type="reset">Reset</button>
+              <button>Submit</button>
+            </div>
+            <hr />
+            <div>
+              <button><a href="index.html">Go Back</a></button>
+            </div>
+          </form>
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
